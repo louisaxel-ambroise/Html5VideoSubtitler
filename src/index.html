@@ -2,14 +2,29 @@
 <html>
 	<head>
 		<title>HTML5 Subtitler</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="subtitler.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	</head>
 	<body>
-		<div id="editor">
-			<video id="videoPlayer">
-				<source src="../video/big-buck-bunny_trailer.webm" type="video/webm">
-				Your browser does not support the video tag.
-			</video>
-			<textarea id="fileArea"></textarea>
+		<div id="subtitlesEditor">
+			<h1>Subtitles Editor</h1>
+			<div id="player">
+				<div id="controls">
+					<button id="playpause"><img src="images/play.png" id="playImage" width="15" height="15" alt="play" /></button>
+					<output id="display">-:--:--</output>
+					<img src="images/volume.png" width="15" height="15" alt="volume" id="volumeicon">
+					<input type="range" min="0" max="1" step="0.1" id="volume">
+				</div>
+				<video id="videoPlayer">
+					<source src="../video/big-buck-bunny_trailer.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+
+			</div>
+		</div>
+		<div id="footer">
+			<p>Version 0.1.0 - Louis-Axel AMBROISE- Follow me on <a href="https://github.com/louisaxel-ambroise/Html5VideoSubtitler">GitHub</a></p>
 		</div>
 	</body>
 </html>

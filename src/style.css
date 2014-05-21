@@ -1,0 +1,102 @@
+#subtitlesEditor{
+	width:600px;
+	margin:auto;
+}
+#subtitlesEditor h1{
+	font-family:verdana;
+	letter-spacing:2px;
+	font-size:160%;
+}
+
+#player{
+	position:relative;
+	width:512px;
+	height:288px;
+}
+
+video {
+	display: block; /* styling shim for older browsers */
+	border: 5px #ddd solid;
+	border-radius: 5px;
+	width:100%;
+	height:100%;
+}
+
+#controls {
+	position: absolute;
+	bottom: 20px;
+	left:156px;
+	border-radius: 5px;
+	border: 1px #333 solid;
+	background: #000 repeat-x top left;
+	width: 200px;
+	height: 31px;
+	opacity: 0.3;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#controls:hover { 
+	border-color: #555;
+	opacity: 0.85;
+}
+
+#controls button {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: transparent;
+}
+#controls button img{
+	border: none;
+}
+
+#controls #display {
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#controls #volume {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	width: 50px;
+	height: 15px;
+}
+#controls #volumeicon {
+	position: absolute;
+	top: 8px;
+	right: 62px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	 -webkit-appearance: none !important;
+	 border-radius: 15px;
+	 background-color: #FFF;
+	 border: 1px solid #999;
+	 height: 20px;
+	 width: 20px;
+}
+
+#footer{
+	font-size:11px;
+	margin:auto;
+	margin-top:40px;
+	width:600px;
+	text-align:center;
+	color:#808080;
+	font-family:verdana, sans;
+}
